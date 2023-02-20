@@ -1,0 +1,20 @@
+<form class="form"  (ngSubmit)="addPlayer()">
+    <div>
+        <input type="text" placeholder="PlayerName" id="PlayerName" name="playerName"
+        [(ngModel)]="addPlayerReq.playerName">
+    </div>
+    <div>
+        <input type="text" placeholder="TeamName" name="teamName" id="teamName"
+        [(ngModel)]="addPlayerReq.teamName">
+    </div>
+    <div>
+        <input type="text" placeholder="playerGoals" name="playerGoals" id="playerGoals"
+        [(ngModel)]="addPlayerReq.playerGoals">
+    </div>
+    <div>
+        <input type="text" placeholder="playerRole" name="playerRole" id="playerRole" ngModel
+        [(ngModel)]="addPlayerReq.playerRole">
+    </div>
+<button type="submit">submit</button>
+
+</form>

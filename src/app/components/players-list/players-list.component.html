@@ -1,0 +1,32 @@
+<div class="playerslistcontainer">
+
+
+    <div class="text-center">
+    <h1> Football Players.UI </h1>
+    </div>
+    <div class="outer b-o">
+        <h2>Players-List</h2>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th> Id</th>
+                    <th> Player Name</th>
+                    <th> Team Name</th>
+                    <th> Player Goals</th>
+                    <th> Player Role</th>
+                    <th> Actions </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr  *ngFor= "let player of players">
+                    <td>{{ player.id}}</td>
+                    <td>{{ player.playerName}}</td>
+                    <td>{{ player.teamName}}</td>
+                    <td>{{ player.playerGoals}}</td>
+                    <td>{{ player.playerRole}}</td>
+                </tr>
+            </tbody>
+        </table>
+        <button type="button" routerLink="/create-player">AddPlayer</button>
+    </div>
+    </div>
